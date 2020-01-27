@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Another ProDuct Feature" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-06-30T04:58:01" hostname="Andromeda.local" time="0.008">
+  <properties/>
+  <testcase name="Another simple given-when-then scenario" classname="Another ProDuct Feature" time="0.004"/>
+  <testcase name="And yet another given-when-then scenario" classname="Another ProDuct Feature" time="0.003"/>
+  <system-out><![CDATA[10:28:01.647 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Another simple given-when-then scenario
+-------------------------------------------------------------------(another-product-feature;another-simple-given-when-then-scenario)
+10:28:01.651 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: And yet another given-when-then scenario
+-------------------------------------------------------------------(another-product-feature;and-yet-another-given-when-then-scenario)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

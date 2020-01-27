@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class A Broken Feature</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class A Broken Feature</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; A Broken Feature</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">14</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">6</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">1</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.214s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">53%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="A broken given-when-then scenario"></a>
+<h3 class="failures">A broken given-when-then scenario</h3>
+<span class="code">
+<pre>java.lang.NullPointerException
+	at demo.stepdefinitions.DemoStepDefinitions.something_unexpected_happens(DemoStepDefinitions.java:35)
+	at ✽.something unexpected happens(features/a_component_or_smaller_capability/a_broken_feature.feature:31)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="A broken scenario outline"></a>
+<h3 class="failures">A broken scenario outline</h3>
+<span class="code">
+<pre>java.lang.AssertionError: 
+Expecting:
+ &lt;-10&gt;
+to be greater than:
+ &lt;0&gt; 
+	at demo.stepdefinitions.DemoStepDefinitions.i_should_be_charged(DemoStepDefinitions.java:75)
+	at ✽.I should be charged -10(features/a_component_or_smaller_capability/a_broken_feature.feature:46)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="A broken scenario outline"></a>
+<h3 class="failures">A broken scenario outline</h3>
+<span class="code">
+<pre>java.lang.AssertionError: 
+Expecting:
+ &lt;-30&gt;
+to be greater than:
+ &lt;0&gt; 
+	at demo.stepdefinitions.DemoStepDefinitions.i_should_be_charged(DemoStepDefinitions.java:75)
+	at ✽.I should be charged -30(features/a_component_or_smaller_capability/a_broken_feature.feature:46)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="A failing given-when-then scenario"></a>
+<h3 class="failures">A failing given-when-then scenario</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Excluded lists do not match...
+Expected:[...]
+Actual: [...]
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at demo.stepdefinitions.DemoStepDefinitions.something_bad_happens(DemoStepDefinitions.java:28)
+	at ✽.something bad happens(features/a_component_or_smaller_capability/a_broken_feature.feature:26)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="A scenario with a broken precondition"></a>
+<h3 class="failures">A scenario with a broken precondition</h3>
+<span class="code">
+<pre>net.serenitybdd.core.exceptions.TestCompromisedException: Unknown colour
+	at demo.stepdefinitions.DemoStepDefinitions.i_add_a_paint_to_my_shopping_cart(DemoStepDefinitions.java:65)
+	at ✽.I add a unknown paint to my shopping cart(features/a_component_or_smaller_capability/a_broken_feature.feature:55)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="A scenario with a broken precondition"></a>
+<h3 class="failures">A scenario with a broken precondition</h3>
+<span class="code">
+<pre>net.serenitybdd.core.exceptions.TestCompromisedException: Unknown colour
+	at demo.stepdefinitions.DemoStepDefinitions.i_add_a_paint_to_my_shopping_cart(DemoStepDefinitions.java:65)
+	at ✽.I add a Unknown paint to my shopping cart(features/a_component_or_smaller_capability/a_broken_feature.feature:55)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">A broken given-when-then scenario</td>
+<td class="failures">0.006s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">A broken scenario outline</td>
+<td class="failures">0.008s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">A broken scenario outline</td>
+<td class="success">0.046s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">A broken scenario outline</td>
+<td class="failures">0.003s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">A broken scenario outline</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">A failing given-when-then scenario</td>
+<td class="failures">0.009s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="skipped">A failing manual scenario</td>
+<td class="skipped">-</td>
+<td class="skipped">ignored</td>
+</tr>
+<tr>
+<td class="failures">A scenario with a broken precondition</td>
+<td class="failures">0.004s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">A scenario with a broken precondition</td>
+<td class="failures">0.008s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">A scenario with a broken precondition</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">A scenario with a broken precondition</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">A scenario with an embedded table</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">A simple given-when-then scenario with bullet points</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">A simple passing given-when-then scenario</td>
+<td class="success">0.113s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>10:28:01.280 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ &lt; | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: A simple passing given-when-then scenario
+-------------------------------------------------------------------(a-broken-feature;a-simple-passing-given-when-then-scenario)
+10:28:01.384 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ &lt; | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: A simple given-when-then scenario with bullet points
+-------------------------------------------------------------------(a-broken-feature;a-simple-given-when-then-scenario-with-bullet-points)
+10:28:01.405 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ &lt; | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: A failing manual scenario
+-------------------------------------------------------------------(a-broken-feature;a-failing-manual-scenario)
+10:28:01.406 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - TEST MANUAL
+10:28:01.408 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - TEST MANUAL
+10:28:01.409 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - TEST MANUAL
+10:28:01.409 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - TEST MANUAL
+10:28:01.414 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ &lt; | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: A failing given-when-then scenario
+-------------------------------------------------------------------(a-broken-feature;a-failing-given-when-then-scenario)
+10:28:01.484 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ &lt; | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: A broken given-when-then scenario
+-------------------------------------------------------------------(a-broken-feature;a-broken-given-when-then-scenario)
+10:28:01.495 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ &lt; | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: A scenario with an embedded table
+-------------------------------------------------------------------(a-broken-feature;a-scenario-with-an-embedded-table)
+10:28:01.504 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ &lt; | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: A broken scenario outline
+-------------------------------------------------------------------(a-broken-feature;a-broken-scenario-outline)
+10:28:01.576 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ &lt; | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: A scenario with a broken precondition
+-------------------------------------------------------------------(a-broken-feature;a-scenario-with-a-broken-precondition)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.3.1</a> at 30 Jun 2019, 10:28:02</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+A component, or maybe a smaller capability

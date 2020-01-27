@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Add ToDos" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-06-30T04:58:01" hostname="Andromeda.local" time="0.011">
+  <properties/>
+  <testcase name="Adding an item to an empty list" classname="Add ToDos" time="0.004"/>
+  <testcase name="Adding an item to a list with other items" classname="Add ToDos" time="0.005"/>
+  <system-out><![CDATA[10:28:01.656 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Adding an item to an empty list
+-------------------------------------------------------------------(add-todos;adding-an-item-to-an-empty-list)
+10:28:01.662 [Test worker] INFO  n.t.c.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Adding an item to a list with other items
+-------------------------------------------------------------------(add-todos;adding-an-item-to-a-list-with-other-items)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

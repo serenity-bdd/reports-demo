@@ -1,0 +1,75 @@
+{
+  "name": "Adding an item to an empty list",
+  "title": "Adding an item to an empty list",
+  "id": "add-todos;adding-an-item-to-an-empty-list",
+  "testSteps": [
+    {
+      "number": 1,
+      "description": "Given James has an empty todo list",
+      "duration": 1,
+      "startTime": "2019-03-29T18:24:41.366954Z[Europe/London]",
+      "result": "PENDING",
+      "precondition": false,
+      "level": 0
+    },
+    {
+      "number": 2,
+      "description": "When he adds \u0027Buy some milk\u0027 to his list",
+      "duration": 0,
+      "startTime": "2019-03-29T18:24:41.368143Z[Europe/London]",
+      "result": "IGNORED",
+      "precondition": false,
+      "level": 0
+    },
+    {
+      "number": 3,
+      "description": "Then \u0027Buy some milk\u0027 should be recorded in his list",
+      "duration": 0,
+      "startTime": "2019-03-29T18:24:41.368557Z[Europe/London]",
+      "result": "IGNORED",
+      "precondition": false,
+      "level": 0
+    }
+  ],
+  "userStory": {
+    "id": "add-todos",
+    "storyName": "Add ToDos",
+    "path": "features/record-keeping/add_todos.feature",
+    "narrative": "  In order to avoid having to remember things that need doing\n  As a forgetful person\n  I want to be able to record them as soon as I learn about them",
+    "type": "feature"
+  },
+  "featureTag": {
+    "name": "Record-keeping/Add ToDos",
+    "type": "feature",
+    "displayName": "Record-keeping/Add ToDos"
+  },
+  "tags": [
+    {
+      "name": "Record-keeping/Add ToDos",
+      "type": "feature",
+      "displayName": "Add ToDos"
+    },
+    {
+      "name": "Record-keeping",
+      "type": "theme",
+      "displayName": "Managing a ToDo list"
+    },
+    {
+      "name": "cucumber",
+      "type": "tag",
+      "displayName": "cucumber"
+    },
+    {
+      "name": "protractor",
+      "type": "tag",
+      "displayName": "protractor"
+    }
+  ],
+  "startTime": "2019-03-29T18:24:41.364237Z[Europe/London]",
+  "duration": 6,
+  "projectKey": "",
+  "annotatedResult": "PENDING",
+  "manual": false,
+  "testSource": "Cucumber",
+  "result": "PENDING"
+}
