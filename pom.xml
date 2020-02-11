@@ -11,11 +11,9 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <serenity.version>2.0.92-SNAPSHOT</serenity.version>
-        <serenity.maven.version>2.0.91</serenity.maven.version>
-<!--        <serenity.cucumber.version>1.0.30</serenity.cucumber.version>-->
-        <serenity.cucumber.version>4.1.1-SNAPSHOT</serenity.cucumber.version>
-<!--        <serenity.cucumber.version>1.9.39-SNAPSHOT</serenity.cucumber.version>-->
+        <serenity.version>2.1.6-SNAPSHOT</serenity.version>
+        <serenity.maven.version>2.1.5</serenity.maven.version>
+        <serenity.cucumber.version>2.1.2</serenity.cucumber.version>
         <cucumber.version>4.8.0</cucumber.version>
         <encoding>UTF-8</encoding>
         <tags></tags>
@@ -82,17 +80,15 @@
             <artifactId>cucumber-junit</artifactId>
             <version>${cucumber.version}</version>
         </dependency>
-
-<!--        <dependency>-->
-<!--            <groupId>net.serenity-bdd</groupId>-->
-<!--            <artifactId>serenity-cucumber</artifactId>-->
-<!--            <version>${serenity.cucumber.version}</version>-->
-<!--            <scope>test</scope>-->
-<!--        </dependency>-->
-
         <dependency>
             <groupId>net.serenity-bdd</groupId>
             <artifactId>serenity-junit</artifactId>
+            <version>${serenity.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>net.serenity-bdd</groupId>
+            <artifactId>serenity-rest-assured</artifactId>
             <version>${serenity.version}</version>
             <scope>test</scope>
         </dependency>
@@ -104,7 +100,7 @@
         </dependency>
         <dependency>
             <groupId>net.serenity-bdd</groupId>
-            <artifactId>serenity-emailer</artifactId>
+            <artifactId>serenity-single-page-report</artifactId>
             <version>${serenity.version}</version>
             <scope>test</scope>
         </dependency>
@@ -149,15 +145,12 @@
                 <configuration>
                     <includes>
                         <include>**/*.java</include>
-<!--                        <include>**/Test*.java</include>-->
-<!--                        <include>**/*TestSuite.java</include>-->
-<!--                        <include>**/When*.java</include>-->
-<!--                        <include>**/Grow*.java</include>-->
                     </includes>
                     <parallel>methods</parallel>
                     <useUnlimitedThreads>true</useUnlimitedThreads>
-<!--                    <threadCount>${parallel.tests}</threadCount>-->
-<!--                    <forkCount>${parallel.tests}</forkCount>-->
+<!--                    <systemPropertyVariables>-->
+<!--                        <environment>${environment}</environment>-->
+<!--                    </systemPropertyVariables>-->
                 </configuration>
                 <executions>
                     <execution>
@@ -183,7 +176,7 @@
                 <version>${serenity.maven.version}</version>
                 <configuration>
                     <tags>${tags}</tags>
-                    <reports>email</reports>
+                    <reports>single-page-html</reports>
                 </configuration>
                 <executions>
                     <execution>
@@ -207,7 +200,7 @@
                     </dependency>
                     <dependency>
                         <groupId>net.serenity-bdd</groupId>
-                        <artifactId>serenity-emailer</artifactId>
+                        <artifactId>serenity-single-page-report</artifactId>
                         <version>${serenity.version}</version>
                     </dependency>
                     <dependency>
