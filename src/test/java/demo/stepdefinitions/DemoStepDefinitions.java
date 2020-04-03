@@ -7,8 +7,6 @@ import io.cucumber.java.en.When;
 import net.thucydides.core.annotations.Steps;
 
 
-import static org.assertj.core.api.Assertions.assertThat;
-
 public class DemoStepDefinitions {
 
     @Steps
@@ -35,13 +33,13 @@ public class DemoStepDefinitions {
     public void iHaveAField() {
     }
 
-    @When("I plant some (.*) trees")
+    @When("^I plant some (.*) trees")
     public void iPlantSomePearTrees(String treeType) {
         aStepLibrary.digAHole();
         aStepLibrary.plantASeed();
     }
 
-    @Then("some (.*) should grow")
+    @Then("^some (.*) should grow")
     public void somePearsShouldGrow(String grownThings) {
     }
 
@@ -61,7 +59,7 @@ public class DemoStepDefinitions {
     public void iShouldBeAbleToPickThem() {
     }
 
-    @And("the apples should be (.*)")
+    @And("^the apples should be (.*)")
     public void theApplesShouldBe(String color) {
     }
 
